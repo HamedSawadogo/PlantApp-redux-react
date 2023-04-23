@@ -1,0 +1,6 @@
+.lmj-plant-list {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: center;
+  align-items: center;
+}

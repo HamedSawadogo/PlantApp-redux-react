@@ -29,12 +29,14 @@ export const cartSlice = createSlice({
           amount: payload.amount,
         });
       }
+      window.localStorage.cart = JSON.stringify(state.cart);
     },
     setCart: (state, { payload }) => {
       state.cart = payload;
     },
     emptyCart: (state) => {
       state.cart = [];
+      window.localStorage.cart = [];
     },
   },
 });
