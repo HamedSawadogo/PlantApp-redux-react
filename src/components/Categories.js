@@ -19,7 +19,7 @@ function Categories({ setActiveCategory, categories, activeCategory }) {
       <button className="set-option" onClick={() => setActiveCategory("")}>
         Réinitialiser
       </button>
-      {/* <NavLink to={""}></NavLink> */}
+      <NavLink to={"/pannier"}>Pannier</NavLink>
     </div>
   );
 }

@@ -20,6 +20,7 @@ export const cartSlice = createSlice({
             name: payload.name,
             price: payload.price,
             amount: currentPlantAdded.amount + 1,
+            cover: payload.cover,
           },
         ];
       } else {
@@ -27,6 +28,7 @@ export const cartSlice = createSlice({
           name: payload.name,
           price: payload.price,
           amount: payload.amount,
+          cover: payload.cover,
         });
       }
       window.localStorage.cart = JSON.stringify(state.cart);

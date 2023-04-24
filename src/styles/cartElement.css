@@ -1,0 +1,10 @@
+.cart-element {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.cart-cover {
+  height: 100px;
+  width: 100px;
+}

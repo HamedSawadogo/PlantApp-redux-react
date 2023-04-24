@@ -8,7 +8,7 @@ const Card = ({ plant }) => {
   const dispatch = useDispatch();
 
   const addToCart = (name, price) => {
-    const cartData = { name, price, amount: 1 };
+    const cartData = { name, price, amount: 1, cover: plant.cover };
     dispatch(addTocart(cartData));
   };
 
